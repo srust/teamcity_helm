@@ -1,6 +1,6 @@
 # Default values for teamcity.
 
-agentReplicaCount: 1
+agentReplicaCount: 3
 
 image:
   server:
@@ -11,8 +11,8 @@ image:
   pullPolicy: IfNotPresent
 
 pvc:
-  data: ""
-  logs: ""
+  data: teamcity-data
+  logs: teamcity-logs
   config: ""
 
 serviceAccount:
@@ -28,7 +28,7 @@ securityContext: {}
 
 service:
   int_type: ClusterIP
-  ext_type: NodePort
+  ext_type: LoadBalancer
   port: 8111
 
 ingress:
