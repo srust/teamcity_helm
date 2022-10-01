@@ -3,19 +3,18 @@ entries:
   teamcity:
   - apiVersion: v2
     appVersion: 2020.1.4
-    created: "2022-10-01T16:31:08.422832-04:00"
+    created: "2022-10-01T16:32:42.23914-04:00"
     description: A Helm chart to install a simple TeamCity installation
-    digest: 7a818df4231ed7e915918910576f7ba53cb4ff46894c325b1e79f4f39207bac1
-    icon: https://cdn.freebiesupply.com/logos/large/2x/teamcity-icon-logo-svg-vector.svg
+    digest: de341d4f08c731ba6449cc2cdaddb2f414633849a4c61df2afc0411927e04c38
     maintainers:
-    - email: seppler@presidio.com
-      name: Scott Eppler
-      url: https://github.com/audioboxer217/
+    - email: srust@srust.dev
+      name: Stephen Rust
+      url: https://github.com/srust
     name: teamcity
     sources:
-    - https://github.com/codaglobal/teamcity_helm
+    - https://github.com/srust/teamcity_helm
     type: application
     urls:
     - https://srust.github.io/teamcity_helm/teamcity-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-01T16:31:08.420507-04:00"
+generated: "2022-10-01T16:32:42.237426-04:00"
