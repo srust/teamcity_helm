@@ -3,9 +3,9 @@ entries:
   teamcity:
   - apiVersion: v2
     appVersion: 2020.1.4
-    created: "2022-10-01T16:32:42.23914-04:00"
+    created: "2022-10-01T16:40:09.370133-04:00"
     description: A Helm chart to install a simple TeamCity installation
-    digest: de341d4f08c731ba6449cc2cdaddb2f414633849a4c61df2afc0411927e04c38
+    digest: 2e4531f6b08286ae8865a61738900a1789e7d17512d687ca0ec94500a4472b4a
     maintainers:
     - email: srust@srust.dev
       name: Stephen Rust
@@ -17,4 +17,4 @@ entries:
     urls:
     - https://srust.github.io/teamcity_helm/teamcity-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-01T16:32:42.237426-04:00"
+generated: "2022-10-01T16:40:09.36884-04:00"

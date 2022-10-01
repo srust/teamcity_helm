@@ -33,7 +33,7 @@ spec:
           mountPath: /data/teamcity_agent/conf
       volumes:
       - name: teamcity-config
-      {{- if .Values.pvc.data }}
+      {{- if .Values.pvc.config }}
         persistentVolumeClaim:
           claimName: {{ .Values.pvc.config }}
       {{- else }}
