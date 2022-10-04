@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "teamcity.fullname" . }}
+  name: "{{ .Chart.Name }}-server"
   labels:
   {{- include "teamcity.labels" . | nindent 4 }}
 spec:
@@ -61,3 +61,29 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end -}}
+{{- if .Values.pvc.data }}
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: "{{ .Values.pvc.data }}"
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+{{- end -}}
+{{- if .Values.pvc.logs }}
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: "{{ .Values.pvc.logs }}"
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+{{- end -}}
