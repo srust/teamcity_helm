@@ -2,7 +2,7 @@ apiVersion: v2
 name: teamcity
 description: A Helm chart to install a simple TeamCity installation
 type: application
-version: 0.1.0
+version: 0.2.0
 appVersion: 2022.04.4
 sources:
   - https://github.com/srust/teamcity_helm
